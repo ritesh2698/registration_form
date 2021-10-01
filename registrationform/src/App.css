@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+.form{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  width: 45%;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+.form h1{
+  color: black;
+}
+.form form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form div{
+  margin: 20px;
+  
+}
+
+form label{
+  margin-right:10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+form input{
+  margin: 0 auto;
+  height: 30px;
+  width: 325px; 
+  
+}
+.address textarea{
+  height: 50px;
+  width: 200px;
+}
+.document {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.document label{
+  margin-top: -14px;
+  margin-left:20px;
+}
+.education{
+  display: flex;
+  flex-direction: row;
+}
+select{
+   width: 50%; 
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+
+}
+.btn .submit{
+  margin:10px auto;
+  height: 35px; 
+  background-color: rgb(131, 250, 52);
+  border:none;
+  border-radius: 4px;
+  width:100px;
+
+}
+.btn .reset{
+  height: 35px; 
+  margin:10px auto;
+  background-color: rgb(250, 52, 52);
+  border:none;
+  border-radius: 4px;
+  width:100px;
+
+}
+
+@media (max-width:900px) {
+  form input{
+    margin: 0 auto;
+    height: 30px;
+    width: 95%; 
+    
+  }
+  .document{
+    flex-wrap: wrap;
+  }
+  .document label{
+    margin-bottom: 10px;
+  }
+  .education{
+   flex-wrap:wrap ;
+   justify-content: center;
+   align-items: center;
+  }
+  .education label{
+    margin-bottom: 10px;
+  }
+}
+
